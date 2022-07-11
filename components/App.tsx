@@ -3,7 +3,7 @@ import data from "../data.json";
 import Header from "./Header";
 import ToDoList from "./ToDoList";
 import ToDoForm from "./ToDoForm";
-interface Todo {
+export interface Todo {
   id: number;
   task: string;
   complete: boolean;

@@ -1,9 +1,10 @@
 import React from "react";
+import { Todo } from "./App";
 const ToDo = ({
   todo,
   handleToggle,
 }: {
-  todo: { task: string; id: number };
+  todo: Todo;
   handleToggle: (id: number) => void;
 }) => {
   return (

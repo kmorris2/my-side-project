@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Todo } from "./App";
 import ToDo from "./ToDo";
 
 const ToDoList = ({
@@ -6,7 +7,7 @@ const ToDoList = ({
   handleToggle,
   handleFilter,
 }: {
-  toDoList: { id: number; task: string; complete: boolean }[];
+  toDoList: Todo[];
   handleToggle: (id: number) => void;
   handleFilter: () => void;
 }) => {
