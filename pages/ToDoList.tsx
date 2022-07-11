@@ -1,16 +1,24 @@
 import * as React from "react";
 import ToDo from "./ToDo";
 
-const ToDoList = ({ toDoList, handleToggle, handleFilter }) => {
+const ToDoList = ({
+  toDoList,
+  handleToggle,
+  handleFilter,
+}: {
+  toDoList: any;
+  handleToggle: any;
+  handleFilter: any;
+}) => {
   return (
     <div>
-      {toDoList.map((todo) => {
+      {toDoList.map((todo: any) => {
         return (
           <ToDo
             key={todo.id}
             todo={todo}
             handleToggle={handleToggle}
-            handleFilter={handleFilter}
+            // handleFilter={handleFilter}
           />
         );
       })}

@@ -15,6 +15,16 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "pages/ToDoList.js",
+    "pages/ToDoForm.js",
+    "pages/ToDo.js",
+    "pages/index.js",
+    "pages/Header.js",
+    "pages/App.js"
+  ],
   "exclude": ["node_modules"]
 }
