@@ -6,13 +6,13 @@ const ToDoList = ({
   handleToggle,
   handleFilter,
 }: {
-  toDoList: any;
-  handleToggle: any;
-  handleFilter: any;
+  toDoList: { id: number; task: string; complete: boolean }[];
+  handleToggle: (id: number) => void;
+  handleFilter: () => void;
 }) => {
   return (
     <div>
-      {toDoList.map((todo: any) => {
+      {toDoList.map((todo: { id: number; task: string; complete: boolean }) => {
         return (
           <ToDo
             key={todo.id}

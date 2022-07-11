@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
 // TODO change addTask to props
-const ToDoForm = (addTask: any) => {
+const ToDoForm = ({ addTask }: { addTask: (task: string) => void }) => {
   const [userInput, setUserInput] = useState("");
-  const handleChange = (e: any) => {
+  const handleChange = (e: React.BaseSyntheticEvent) => {
     setUserInput(e.currentTarget.value);
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
     addTask(userInput);
     setUserInput("");
