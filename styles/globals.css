@@ -20,5 +20,46 @@ a {
 }
 
 .task-container {
+  display: flex;
+  justify-content: center;
   margin-bottom: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.todo-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  /* width: 300px; */
+}
+
+/* TODO get clear button to move to the center. Right now it is stuck to the right */
+.clear-button {
+  width: 160px;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border-width: 1px;
+}
+.clear-button:hover {
+  background-color: rgb(222, 216, 216);
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.submit {
+  border-radius: 4px;
+  border-width: 1px;
+}
+.submit:hover {
+  background-color: rgb(222, 216, 216);
+  border-width: 1px;
 }

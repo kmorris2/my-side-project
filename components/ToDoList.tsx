@@ -12,7 +12,7 @@ const ToDoList = ({
   handleFilter: () => void;
 }) => {
   return (
-    <div>
+    <div className="todo-list">
       {toDoList.map((todo: { id: number; task: string; complete: boolean }) => {
         return (
           <ToDo
@@ -23,7 +23,9 @@ const ToDoList = ({
           />
         );
       })}
-      <button onClick={handleFilter}>Clear Completed Tasks</button>
+      <button className="clear-button" onClick={handleFilter}>
+        Clear Completed Tasks
+      </button>
     </div>
   );
 };

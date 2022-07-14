@@ -14,14 +14,15 @@ const ToDoForm = ({ addTask }: { addTask: (task: string) => void }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="form" onSubmit={handleSubmit}>
       <input
+        className="input-area"
         value={userInput}
         type="text"
         onChange={handleChange}
         placeholder="Enter task..."
       />
-      <button>Submit</button>
+      <button className="submit">Submit</button>
     </form>
   );
 };
