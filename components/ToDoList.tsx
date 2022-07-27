@@ -13,6 +13,9 @@ const ToDoList = ({
 }) => {
   return (
     <div className="todo-list">
+      <button className="clear-button" onClick={handleFilter}>
+        Clear Completed Tasks
+      </button>
       {toDoList.map((todo: { id: number; task: string; complete: boolean }) => {
         return (
           <ToDo
@@ -23,9 +26,9 @@ const ToDoList = ({
           />
         );
       })}
-      <button className="clear-button" onClick={handleFilter}>
+      {/* <button className="clear-button" onClick={handleFilter}>
         Clear Completed Tasks
-      </button>
+      </button> */}
     </div>
   );
 };
